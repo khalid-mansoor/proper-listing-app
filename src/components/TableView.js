@@ -16,7 +16,7 @@ function TableView({ listing }) {
             <th>Area</th>
             <th>Bed</th>
             <th>Bathrooms</th>
-            {/* <th>Commercial</th> */}
+            <th>Commercial</th>
             <th>Price</th>
             <th>Action</th>
           </tr>
@@ -39,9 +39,13 @@ function TableView({ listing }) {
                   <td>{list?.coveredAreaSQFT}</td>
                   <td>{list?.bed}</td>
                   <td>{list?.bath}</td>
-                  {/* <td>
-                    <Badge>{list?.isCommercial}</Badge>
-                  </td> */}
+                  <td>
+                    {list?.isCommercial == false ? (
+                      <Badge>Local</Badge>
+                    ) : (
+                      <Badge color="success">Commercial</Badge>
+                    )}
+                  </td>
                   <td>{list?.price}</td>
                   <td>
                     <Link to={`/admin/property-detail/${list?.id}`}>

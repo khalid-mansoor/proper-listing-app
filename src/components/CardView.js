@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, Col, Row, Spinner } from "reactstrap";
+import { Badge, Card, Col, Row, Spinner } from "reactstrap";
 
 function CardView({ listing }) {
   return (
@@ -26,6 +26,13 @@ function CardView({ listing }) {
                           <p class="card-text mb-0">{list?.title}</p>
                           <p class="card-text mb-0">{list?.price} PKR</p>
                         </div>
+                        <p>
+                          {list?.isCommercial == false ? (
+                            <Badge>Local</Badge>
+                          ) : (
+                            <Badge color="success">Commercial</Badge>
+                          )}
+                        </p>
                       </div>
                     </Card>
                   </Link>

@@ -132,7 +132,7 @@ function ListView() {
   return (
     <>
       <Row className="m-0 p-0">
-        <Col md={2} className="p-3">
+        <Col lg={2} md={3} sm={12} className="p-3">
           <div className="d-flex flex-column align-items-start justify-content-start">
             <div className="d-flex align-items-center justify-content-center my-3">
               <div className="form-check">
@@ -297,7 +297,7 @@ function ListView() {
             </div>
           </div>
         </Col>
-        <Col md={10}>
+        <Col lg={10} md={9} sm={12}>
           <Card className="p-2 p-lg-5">
             <div className="d-flex justify-content-end align-items-center my-3">
               <span className="mx-2">Sort By:</span>
