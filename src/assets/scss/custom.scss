@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap");
+
+* {
+  font-family: "Pacifico", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+.property-details {
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
